@@ -19,7 +19,7 @@
         <!-- Menu de Navegacion -->
         <nav class="navegacion">
             <ul class="menu">
-                <li><a href="a">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="a">Noticias</a></li>
                 <li><a href="a">Guías</a></li>
                 <li><a href="a">Contacto</a></li>
@@ -96,29 +96,7 @@
 
         <!-- Formulario de registro -->
         <section class="tarjeta">
-            <h2>Registro de usuario</h2>
-            <form name="register" action="registro.html" method="post">
-
-                <!-- Campo de texto -->
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre" required>
-
-                <!-- Campo de password -->
-                <label for="clave">Contraseña:</label>
-                <input type="password" name="pass" id="clave" minlength="6" 
-                maxlength="12" required>
-
-                <!-- Campo número -->
-                <label for="edad">Edad:</label>
-                <input type="number" name="edad" id="edad" min="0" required>
-                
-                <!-- Campo DNI con pattern -->
-
-                <label for="dni">DNI:</label>
-                <input type="text" name="dni" id="dni" pattern="[0-9]{8}[A-Za-z]{1}" required>
-                <button type="submit">Registrar</button>
-
-            </form>
+            <h2><a href="pages/formulario.html">¡Registrate para mantenerte actualizado de nuevos estrenos!</a></h2>
         </section>
     </main>
 
