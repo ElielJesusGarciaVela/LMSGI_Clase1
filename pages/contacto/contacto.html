@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pagina web de videojuegos" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>GameZone</title>
+  </head>
+  <body>
+    <header class="cabecera">
+      <!-- Logo/Marca de la página -->
+      <div class="brand">
+        <img
+          class="logo"
+          src="../../imagenes/gamezone-logo.png"
+          alt="Logo de GameZone"
+        />
+        <!-- <h1 class="titulo">GameZone</h1> -->
+      </div>
+
+      <!-- Menu de Navegacion -->
+      <nav class="navegacion">
+        <ul class="menu">
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a href="a">Noticias</a></li>
+          <li><a href="a">Guías</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="contenido-principal">
+      <!-- Formulario de contacto -->
+      <section class="tarjeta">
+        <form
+          class="contacto"
+          name="contacto"
+          action="contacto.php"
+          method="get"
+          autocomplete="off"
+        >
+          <fieldset>
+            <legend><b>Contacto</b></legend>
+            <!-- Lista desplegable -->
+            <div class="form-row">
+              <label for="categoria">Categoría de juego:</label>
+              <select name="categoria" id="categoria">
+                <option disabled selected>-Selecciona categoría-</option>
+                <option value="rol">Rol</option>
+                <option value="aventura">Aventura</option>
+                <option value="deportes">Deportes</option>
+              </select>
+            </div>
+
+            <!-- Radio y checkbox -->
+
+            <div class="form-row">
+              <p>Plataforma:</p>
+              <label>
+                <input type="radio" name="plataforma" value="pc" />PC
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                <input type="radio" name="plataforma" value="ps" />PS5
+              </label>
+            </div>
+            <div class="form-row">
+              <p>Subscribirse a noticias</p>
+              <label><input type="checkbox" name="subscripcion" />Sí</label>
+            </div>
+
+            <!-- Hidden se utiliza para enviar datos no visibles para el usuario -->
+            <input type="hidden" name="product id" value="1234" />
+
+            <!-- Textarea: textos largos -->
+            <br />
+            <div class="form-row">
+              <label for="mensaje">Deja aquí tu mensaje:</label>
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <!-- Botones -->
+            <div class="form-row">
+              <button type="submit">Contactar</button>
+            </div>
+            <div class="form-row">
+              <button type="reset">Limpiar formulario</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="pie">
+      <p>&copy; 2025 Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>

@@ -40,7 +40,6 @@ body {
 
 }
 
-
 /* Menú horizontal con flex */
 .menu {
     list-style: none;   /* Eliminamos las viñetas */
@@ -93,55 +92,48 @@ body {
     border: 1px solid #ddd;
 }
 
-/* Listas y layout simple */
-
-.listas {
+.contacto {
+    background-color: #fff;
+    border: 3px solid yellowgreen;
+    border-radius: 10px;
     display: flex;
-    gap: 2rem;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 380px;
+    min-width: 380px;
+    max-width: 380px;
+    padding: 1rem;
+    margin: 0 auto;
 }
 
-.lista {
-    padding-left: 20px;
+fieldset {
+    border: 1px solid yellowgreen;
+    border-radius: 3px;
+    max-width: 380px;
 
 }
 
-.lista li {
-    margin: 0.25rem 0;
-}
-/* Tabla:
-    - width: ocupa todo el ancho
-    - border-collapse: une los bordes
-*/
-
-.tabla {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
+fieldset textarea{
+    max-width: 310px;
+    min-width: 100px;
+    min-height: 100px;
 }
 
-/* Celdas: Bordes y relleno */
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
 
- .tabla td, .tabla th{
-    border: 1px solid #ddd;
-    padding: 10px;
- }
+.form-row p {
+    font-weight: bold;
 
- /* Cabecera de la tabla de forma diferente */
- .tabla th{
-    background: #2C3E50;
-    color:#fff;
-    text-align: center;
- }
+}
 
- /* Celdas de cuerpo de tabla diferente */
- .table td{
-    text-align: center;
-    white-space: nowrap;
- }
-
-
-
+.form-row button {
+    display: flex;
+    flex-direction:column;
+    padding: 0.5rem;
+    margin: 10px auto;
+}
 
 .pie {
     text-align: center;
