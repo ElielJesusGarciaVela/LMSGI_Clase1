@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guias</title>
+    <link rel="stylesheet" href="../../estilos.css" />
+  </head>
+  <body>
+    <header class="cabecera">
+      <!-- Logo/Marca de la página -->
+      <div class="brand">
+        <img
+          class="logo"
+          src="../../imagenes/gamezone-logo.png"
+          alt="Logo de GameZone"
+        />
+        <!-- <h1 class="titulo">GameZone</h1> -->
+      </div>
+
+      <!-- Menu de Navegacion -->
+      <nav class="navegacion">
+        <ul class="menu">
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="guias.html" class="activo">Guías</a></li>
+          <li><a href="/pages/contacto/contacto.html">Contacto</a></li>
+          <li><a href="/pages/formulario/formulario.html">Registro</a></li>
+          <li><a href="/pages/tienda/tienda.html">Tienda</a></li>
+          <li><a href="/pages/juegos/juegos.html">Juegos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="layout-guias-contenido">
+      <!-- Aquí introduciremos menú lateral + contenido -->
+      <h1>Guias y tutoriales</h1>
+      <p>
+        Aquí encontrarás una selección de videos con guias, trucos, tutoriales
+        de tus videojuegos favoritos
+      </p>
+      <main id="contenido-principal">
+        <section class="tarjeta guias-videos">
+          <h2>Videos destacados</h2>
+
+          <!-- Contenedor grid -->
+          <div class="guias-grid">
+            <article class="guia-video">
+              <h3>Guia 1: God of War</h3>
+              <iframe
+                src="https://www.youtube.com/embed/LFeLNRLQh0c"
+                title="Juego 1: God of War"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                loading="lazy"
+                frameborder="0"
+              ></iframe>
+            </article>
+            <article class="guia-video">
+              <h3>Guia 2: Limbus Company</h3>
+              <iframe
+                src="https://www.youtube.com/embed/GYoYbDg0txA?si=gc666rKgyO5xp_ia"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </article>
+            <article class="guia-video">
+              <h3>Guia 3: Where Winds Meet</h3>
+              <iframe
+                src="https://www.youtube.com/embed/3CObY80jK68?si=msXV_xZcMKSyq6Nt"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="pie">
+      <p>&copy; 2025 Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>

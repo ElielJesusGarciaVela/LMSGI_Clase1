@@ -1,109 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pagina web de videojuegos">
-    <link rel="stylesheet" href="estilos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pagina web de videojuegos" />
+    <link rel="stylesheet" href="estilos.css" />
+    <!-- Preconexion a las tipografias de google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>GameZone</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="cabecera">
+      <!-- Logo/Marca de la página -->
+      <div class="brand">
+        <img
+          class="logo"
+          src="imagenes/gamezone-logo.png"
+          alt="Logo de GameZone"
+        />
+        <!-- <h1 class="titulo">GameZone</h1> -->
+      </div>
 
-        <!-- Logo/Marca de la página -->
-        <div class="brand">
-            <img class="logo" src="imagenes/gamezone-logo.png" alt="Logo de GameZone">
-            <!-- <h1 class="titulo">GameZone</h1> -->
-        </div>
-
-        <!-- Menu de Navegacion -->
-        <nav class="navegacion">
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Guías</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="/pages/formulario/formulario.html">Registro</a></li>
-                <li><a href="/pages/tienda/tienda.html">Tienda</a></li>
-            </ul>
-        </nav>
+      <!-- Menu de Navegacion -->
+      <nav class="navegacion">
+        <ul class="menu">
+          <li><a href="index.html" class="activo">Inicio</a></li>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="/pages/guias/guias.html">Guías</a></li>
+          <li><a href="/pages/contacto/contacto.html">Contacto</a></li>
+          <li><a href="/pages/formulario/formulario.html">Registro</a></li>
+          <li><a href="/pages/tienda/tienda.html">Tienda</a></li>
+          <li><a href="/pages/juegos/juegos.html">Juegos</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main id="contenido-principal">
-        <section class="intro tarjeta">
-            <h2>Bienvenido a GameZone</h2>
-            <p>Portal de ejemplo para practicar HTML y CSS.</p>
-        </section>
+      <section class="intro tarjeta">
+        <h2>Bienvenido a GameZone</h2>
+        <p>Portal de ejemplo para practicar HTML y CSS.</p>
+      </section>
 
-        <section class="listas-y-tabla tarjeta">
-            <h2>Guía rápida</h2>
+      <section class="listas-y-tabla tarjeta">
+        <h2>Guía rápida</h2>
 
-            <div class="listas">
-                <div>
-                    <h3>Características (ul)</h3>
-                    <ul class="lista">
-                        <li>Análisis semanales</li>
-                        <li>Guias paso a paso</li>
-                        <li>Comunidad activa</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Primeros pasos</h3>
-                    <ol class="lista">
-                        <li>Elige tu género favorito</li>
-                        <li>Explora la galería</li>
-                        <li>Lee las guias</li>
-                        <li>Comparte tu opinión</li>
-                    </ol>
-                </div>
-            </div>
+        <div class="listas">
+          <div>
+            <h3>Características (ul)</h3>
+            <ul class="lista">
+              <li>Análisis semanales</li>
+              <li>Guias paso a paso</li>
+              <li>Comunidad activa</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Primeros pasos</h3>
+            <ol class="lista">
+              <li>Elige tu género favorito</li>
+              <li>Explora la galería</li>
+              <li>Lee las guias</li>
+              <li>Comparte tu opinión</li>
+            </ol>
+          </div>
+        </div>
 
-            <h3>Top Ventas</h3>
-            <table class="tabla">
-                <thead>
-                    <tr>
-                        <th>Juego</th>
-                        <th>Plataforma</th>
-                        <th>Unidades</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Racing Challenge</td>
-                        <td>PC</td>
-                        <td>120</td>
-                    </tr>
-                    <tr>
-                        <td>Magic Realms</td>
-                        <td>P5</td>
-                        <td>95</td>
-                    </tr>
-                    <tr>
-                        <td>City Builder</td>
-                        <td>Swtich</td>
-                        <td>81</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <!-- Formularios -->
-        <section class="tarjeta">
-            <form name="buscar" action="buscar.html" method="get">
-                <label for="busqueda">Buscar juego:</label>
-                <input type="search" name="busqueda" id="busqueda"
-                placeholder="Escribe título" required>
-                <button type="submit">Buscar</button>
-            </form>
-        </section>
+        <h3>Top Ventas</h3>
+        <table class="tabla">
+          <thead>
+            <tr>
+              <th>Juego</th>
+              <th>Plataforma</th>
+              <th>Unidades</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Racing Challenge</td>
+              <td>PC</td>
+              <td>120</td>
+            </tr>
+            <tr>
+              <td>Magic Realms</td>
+              <td>P5</td>
+              <td>95</td>
+            </tr>
+            <tr>
+              <td>City Builder</td>
+              <td>Swtich</td>
+              <td>81</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Formularios -->
+      <section class="tarjeta">
+        <form name="buscar" action="buscar.html" method="get">
+          <label for="busqueda">Buscar juego:</label>
+          <input
+            type="search"
+            name="busqueda"
+            id="busqueda"
+            placeholder="Escribe título"
+            required
+          />
+          <button type="submit">Buscar</button>
+        </form>
+      </section>
 
-        <!-- Formulario de registro -->
-        <section class="tarjeta">
-            <h2><a href="pages/formulario/formulario.html">¡Registrate para mantenerte actualizado de nuevos estrenos!</a></h2>
-        </section>
+      <!-- Formulario de registro -->
+      <section class="tarjeta">
+        <h2>
+          <a href="pages/formulario/formulario.html"
+            >¡Registrate para mantenerte actualizado de nuevos estrenos!</a
+          >
+        </h2>
+      </section>
     </main>
 
     <footer class="pie">
-        <p>&copy; 2025 Todos los derechos reservados</p>
+      <p>&copy; 2025 Todos los derechos reservados</p>
     </footer>
-</body>
+  </body>
 </html>

@@ -25,104 +25,120 @@
           <li><a href="../../index.html">Inicio</a></li>
           <li><a href="#">Noticias</a></li>
           <li><a href="#">Guías</a></li>
-          <li><a href="../contacto/contacto.html">Contacto</a></li>
+          <li><a href="#">Contacto</a></li>
           <li><a href="../formulario/formulario.html">Registro</a></li>
-          <li><a href="tienda.html" class="activo">Tienda</a></li>
-          <li><a href="../juegos/juegos.html">Juegos</a></li>
+          <li><a href="../tienda/tienda.html">Tienda</a></li>
+          <li><a href="juegos.html" class="activo">Juegos</a></li>
         </ul>
       </nav>
     </header>
 
     <main id="contenido-principal">
-      <!-- Section DOS clases: 'tarjeta' (estilo globar) y 'tienda' (estilo más específico) -->
-      <section class="tarjeta tienda">
-        <h2>Productos destacados</h2>
-
-        <!-- Contenedor de cards -->
-        <div class="lista-cards lista-cards--flex">
+      <section class="tarjeta juegos">
+        <h2>Juegos destacados</h2>
+        <div class="lista-cards lista-cards--grid">
           <!-- Primer producto -->
-          <article class="card">
+          <article class="card card-destacada">
             <!-- Imagen -->
             <img
-              src="../../imagenes/mouse.png"
-              alt="Ratón gaming RGB"
+              src="../../imagenes/SuperMario.png"
+              alt="SuperMario"
               class="card-imagen"
             />
 
             <!-- Título del producto -->
-            <h3 class="card-titulo">Ratón Gaming RGB</h3>
+            <h3 class="card-titulo">Super Mario Kart</h3>
 
             <!-- Descripción del producto -->
-            <p class="card-descripcion">
-              Ratón ergonómico de 6 botones y sensor de alta precisión.
-            </p>
+            <p class="card-descripcion">Nintendo Switch</p>
 
             <!-- Precio del producto -->
-            <p class="card-precio">14.99€</p>
+            <p class="card-precio">19.99€</p>
 
             <!-- Botón de comprar -->
             <a href="#" class="card-boton">Añadir al carrito</a>
           </article>
+
+          <!-- Segundo producto -->
+
           <article class="card">
             <!-- Imagen -->
-            <img
-              src="../../imagenes/teclado.png"
-              alt="Ratón gaming RGB"
-              class="card-imagen"
-            />
+            <img src="../../imagenes/CSGO.png" alt="CSG" class="card-imagen" />
 
             <!-- Título del producto -->
-            <h3 class="card-titulo">Teclado Gáming RGB</h3>
+            <h3 class="card-titulo">Counter Strike</h3>
 
             <!-- Descripción del producto -->
-            <p class="card-descripcion">
-              Teclado ergonómico RBG cusotmizable de tamaño completo.
-            </p>
+            <p class="card-descripcion">PC, Steam</p>
 
             <!-- Precio del producto -->
-            <p class="card-precio">29.99€</p>
+            <p class="card-precio">19.99€</p>
 
             <!-- Botón de comprar -->
             <a href="#" class="card-boton">Añadir al carrito</a>
           </article>
+
+          <!-- Tercer producto -->
+
           <article class="card">
             <!-- Imagen -->
             <img
-              src="../../imagenes/monitor.png"
-              alt="Ratón gaming RGB"
+              src="../../imagenes/DragonBall.png"
+              alt="SuperMario"
               class="card-imagen"
             />
 
             <!-- Título del producto -->
-            <h3 class="card-titulo">Monitor Gaming</h3>
+            <h3 class="card-titulo">Dragon Ball Z</h3>
 
             <!-- Descripción del producto -->
-            <p class="card-descripcion">
-              Monitor Gaming de 27 pulgadas y 170Hz.
-            </p>
+            <p class="card-descripcion">PS5, PS4, Nintendo Switch</p>
 
             <!-- Precio del producto -->
-            <p class="card-precio">24.99€</p>
+            <p class="card-precio">19.99€</p>
 
             <!-- Botón de comprar -->
             <a href="#" class="card-boton">Añadir al carrito</a>
           </article>
+
+          <!-- Cuarto Juego -->
+
           <article class="card">
             <!-- Imagen -->
             <img
-              src="../../imagenes/microfono.png"
-              alt="Ratón gaming RGB"
+              src="../../imagenes/Fornite.png"
+              alt="SuperMario"
               class="card-imagen"
             />
 
             <!-- Título del producto -->
-            <h3 class="card-titulo">Micrófono Profesional</h3>
+            <h3 class="card-titulo">Fortnite</h3>
 
             <!-- Descripción del producto -->
-            <p class="card-descripcion">
-              Micrófono de uso profesional con 3 modos diferentes y calidad de
-              audio.
-            </p>
+            <p class="card-descripcion">PS5, PS4, Nintendo Switch</p>
+
+            <!-- Precio del producto -->
+            <p class="card-precio">19.99€</p>
+
+            <!-- Botón de comprar -->
+            <a href="#" class="card-boton">Añadir al carrito</a>
+          </article>
+
+          <!-- Quinto Juego -->
+
+          <article class="card">
+            <!-- Imagen -->
+            <img
+              src="../../imagenes/GodOfWar.png"
+              alt="SuperMario"
+              class="card-imagen"
+            />
+
+            <!-- Título del producto -->
+            <h3 class="card-titulo">God Of War Ragnarök</h3>
+
+            <!-- Descripción del producto -->
+            <p class="card-descripcion">PS5, PS4, Nintendo Switch</p>
 
             <!-- Precio del producto -->
             <p class="card-precio">19.99€</p>
@@ -132,30 +148,6 @@
           </article>
         </div>
       </section>
-
-      <section class="tarjeta intro-grid">
-        <h2>Grid con ÁREAS</h2>
-        <div class="parent">
-            <header class="area-header">HEADER</header>
-            <nav class="area-nav">MENU</nav>
-            <main class="area-main">MAIN</main>
-            <aside class="area-aside">ASIDE</aside>
-            <footer class="area-footer">FOOTER</footer>
-        </div>
-      </section>
-
-      <section class="tarjeta intro-grid">
-        <h2>Ejemplo de cuadrícula con Grid</h2>
-        <div class="contenedor-grid">
-          <div class="item-grid item-1">1</div>
-          <div class="item-grid item-2">2</div>
-          <div class="item-grid item-3">3</div>
-          <div class="item-grid item-4">4</div>
-          <div class="item-grid item-5">5</div>
-          <div class="item-grid item-6">6</div>
-        </div>
-      </section>
-
     </main>
 
     <footer class="pie">
